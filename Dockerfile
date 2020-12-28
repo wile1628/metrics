@@ -6,4 +6,5 @@ RUN mkdir metrics
 
 COPY ./metrics.sh metrics
 
-CMD bash metrics/metrics.sh ${arg}
+RUN chmod u+x metrics/metrics.sh
+CMD metrics/metrics.sh ${arg}
