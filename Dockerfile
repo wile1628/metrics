@@ -6,4 +6,4 @@ RUN mkdir metrics
 
 COPY ./metrics.sh metrics
 
-CMD metrics/metrics.sh ${arg}
+CMD bash metrics/metrics.sh ${arg}
